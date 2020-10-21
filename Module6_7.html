@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #014242;
+          
+        }
+        h1{
+            font-size: 6vw;
+        }
+        .container{
+            margin: 5%;
+        }
+        #nav{
+            font-size: 2vw;
+            display: flex;
+        }
+        a{
+            color: gray;
+            text-decoration: none;
+        }
+        a:hover{
+            color: white;
+        }
+        a:active{
+            color: red;
+        }
+        .text{
+            color: white;
+            font-size: 45px;
+        }
+        #acc{
+            height: 8vw;
+            float: left;
+            margin-right:40px;
+        }
+        span{
+            color: gray;
+            font-size: 2vw;
+        }
+        p{
+            color: white;
+            font-size: 2vw;
+            margin-top: 0;
+        }
+        .author,.comm,.pub,.upd{
+            display: inline-block;
+            float: left;
+            margin: 2vw;
+        }
+        .down{
+            height: 70px;
+            width: 100%;
+        }  
+     
+        
+        @media screen and (max-width:600px){
+            h1{
+            color: white;
+            font-size: 8vw;
+            }
+            #acc{
+                height: 90px;
+                margin: 2vw;
+                margin-top:5vh
+            }
+            .upd{
+                order: 1;
+                margin: 1vw;
+                margin-left: 1vw;
+/*                width: 160px;*/
+            }
+            .author{
+                order: 2;
+                margin: 1vw;
+                margin-left: 6vw;
+             
+            }
+            .comm{
+                order: 3;
+                margin: 1vw;
+            }
+            .pub{
+                order: 4;
+                margin: 1vw;
+            }
+            .col{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+             span{
+            color: gray;
+            font-size: 4vw;
+        }
+        p{
+            color: white;
+            font-size: 4vw;
+            margin-top: 0;
+        }
+            #nav{
+            font-size: 5vw;
+            display: flex;
+        }
+        }
+         
+          
+        
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div id="nav">
+        <a href="#">Home/</a>
+        <a href="#">Articles/</a>
+    </div>
+    <div class="text"><h1>The Difference Between <br>Responsive and <br> Adaptive Design </h1>
+    </div>
+    <div class="down">
+    <div id="icon">
+        <img id="acc" src="account.png" alt="">
+    </div>
+    <div class="col">
+    <div class="author">
+        <span>Author</span>
+        <p>Geoff Graham</p>
+    </div>
+        <div class="comm">
+            <span>49 Comments</span>
+            <p>Go to comments</p>
+        </div>
+        <div class="pub">
+            <span>Published</span>
+            <p>Nov 11, 2018</p>
+        </div>
+    <div class="upd">
+        <span>Updated</span>
+        <p>Nov 17, 2018</p>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
